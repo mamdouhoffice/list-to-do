@@ -1,0 +1,150 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #21a179;
+}
+:root {
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.palestine .image {
+  position: fixed;
+  width: 200px;
+  left: 100px;
+  top: 60px;
+}
+.palestine h1 {
+  position: fixed;
+  top: 200px;
+  font-size: 20px;
+  left: 115px;
+  color: wheat;
+  margin-top: 20px;
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto;
+}
+.form {
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+}
+.input:focus {
+  outline: none;
+}
+.add {
+  border: none;
+  background-color: wheat;
+  color: white;
+  font-weight: 900;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.tasks {
+  background-color: #26ab81;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+.tasks .task {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.tasks .task.done {
+  opacity: 0.5;
+}
+.tasks .task span {
+  position: absolute;
+  font-weight: 900;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.tasks .task span.sp-done {
+  background-color: #1b9c85;
+  right: 75px;
+}
+.tasks .task span.sp-done:hover {
+  background-color: #85e6c5;
+}
+.tasks .task span.del {
+  background-color: crimson;
+  right: 0;
+  border-radius: 0 6px 6px 0px;
+}
+
+.tasks .task span.del:hover {
+  background-color: #c70039;
+}
+
+/* Footer */
+.logo a {
+  position: fixed;
+  font-size: 30px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  text-align: center;
+  right: 200px;
+  top: 130px;
+}
+.logo a span {
+  color: yellow;
+  font-size: 40px;
+}
+
+.logo a:hover span {
+  color: white;
+}
+.logo a:hover {
+  color: yellow;
+  scale: 1.04;
+}
+/* Footer */
+
+@media (max-width: 1200px) {
+  .logo,
+  .palestine {
+    display: none;
+  }
+}
