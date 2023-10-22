@@ -16,7 +16,6 @@ getFromLocal();
 submit.onclick = function () {
   if (input.value !== "") {
     addTask(input.value);
-    Swal.fire("Good job!", "Your Task Added!", "success");
     input.value = "";
   } else {
     Swal.fire("!بتستظرف ؟", "أكتب التاسك ي متخاذل", "info");
@@ -32,6 +31,7 @@ tasksDiv.addEventListener("click", (e) => {
   if (e.target.classList.contains("sp-done")) {
     toggleStatus(e.target.parentElement.getAttribute("data-id"));
     e.target.parentElement.classList.toggle("done");
+    Swal.fire("Good job!", "Your task Done!", "success");
   }
 });
 
